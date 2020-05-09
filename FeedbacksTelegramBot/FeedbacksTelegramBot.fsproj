@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="DomainTypes.fs" />
+        <Compile Include="DomainService.fs" />
+        <Compile Include="Storage.fs" />
+        <Compile Include="ApiSerizalization.fs" />
+        <Compile Include="Api.fs" />
+        <Resource Include="app.settings.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Resource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Data" Version="3.3.3" />
+      <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="Suave" Version="2.2.1" />
+      <PackageReference Include="Suave.IIS" Version="2.4.0" />
+      <PackageReference Include="Telegram.Bot" Version="15.5.1" />
+    </ItemGroup>
+
+</Project>

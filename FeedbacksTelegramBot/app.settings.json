@@ -1,0 +1,6 @@
+{
+    "MongoConnectionString": "mongodb://localhost:27017",
+    "MongoDbName":"FeedbacksTelegramBot",
+    "BotToken": "YOUR_TELEGRAM_BOT_TOKEN",
+    "AdminPassword":"your_admin_pass"
+}
